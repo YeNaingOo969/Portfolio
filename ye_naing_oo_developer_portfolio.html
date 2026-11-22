@@ -9,6 +9,39 @@
     />
     <title>Ye Naing Oo | YNO.dev</title>
 
+    <!-- Favicon: Inline SVG Data URI featuring YNO Monogram -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230b1120'/%3E%3Crect x='1.5' y='1.5' width='61' height='61' rx='14.5' fill='none' stroke='rgba(56,189,248,0.35)' stroke-width='2'/%3E%3Ctext x='32' y='41' font-family='system-ui,-apple-system,sans-serif' font-size='20' font-weight='800' fill='url(%23g)' text-anchor='middle' letter-spacing='-0.5px'%3EYNO%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Open Graph / Facebook / Messenger / Telegram / Viber -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yenaingoo969.github.io/Portfolio/" />
+    <meta property="og:title" content="Ye Naing Oo | Junior Software Engineer Portfolio" />
+    <meta
+      property="og:description"
+      content="Junior Software Engineer specializing in PHP/Laravel web apps, Java/JavaFX desktop systems, and normalized MySQL relational architectures."
+    />
+    <meta
+      property="og:image"
+      content="https://yenaingoo969.github.io/Portfolio/pointer_project.jpg"
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://yenaingoo969.github.io/Portfolio/" />
+    <meta name="twitter:title" content="Ye Naing Oo | Junior Software Engineer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Junior Software Engineer specializing in PHP/Laravel web apps, Java/JavaFX desktop systems, and normalized MySQL relational architectures."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yenaingoo969.github.io/Portfolio/pointer_project.jpg"
+    />
+
     <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -732,6 +765,20 @@
         box-shadow: 0 8px 20px -8px rgba(56, 189, 248, 0.25);
       }
 
+      .btn-cv {
+        background: rgba(56, 189, 248, 0.08);
+        color: var(--accent-cyan);
+        border: 1px solid rgba(56, 189, 248, 0.32);
+      }
+
+      .btn-cv:hover {
+        transform: translateY(-2px);
+        background: rgba(56, 189, 248, 0.16);
+        border-color: var(--accent-cyan);
+        box-shadow: 0 8px 22px -6px rgba(56, 189, 248, 0.35);
+        color: #ffffff;
+      }
+
       .btn-ghost {
         background: rgba(255, 255, 255, 0.02);
         color: var(--text-secondary);
@@ -1359,6 +1406,17 @@
         display: block;
       }
 
+      .credential-fallback-badge {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-cyan);
+        background: rgba(15, 23, 42, 0.9);
+        border-radius: 8px;
+      }
+
       .credential-card:nth-child(even) .credential-icon {
         background: var(--accent-indigo-soft);
         color: var(--accent-indigo);
@@ -1642,6 +1700,43 @@
         font-size: 0.95rem;
         margin-bottom: 22px;
         line-height: 1.7;
+      }
+
+      .modal-role-box {
+        background: rgba(56, 189, 248, 0.06);
+        border: 1px solid rgba(56, 189, 248, 0.22);
+        border-left: 3px solid var(--accent-cyan);
+        border-radius: var(--radius-sm);
+        padding: 14px 16px;
+        margin-bottom: 22px;
+      }
+
+      .modal-role-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+      }
+
+      .modal-role-icon {
+        color: var(--accent-cyan);
+        flex-shrink: 0;
+      }
+
+      .modal-role-label {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--accent-cyan);
+      }
+
+      .modal-role-text {
+        font-size: 0.91rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin: 0;
       }
 
       .modal-section-label {
@@ -2049,6 +2144,30 @@
                   </svg>
                 </a>
 
+                <a
+                  href="Ye_Naing_Oo_CV.pdf"
+                  download
+                  class="btn btn-cv"
+                  aria-label="Download Ye Naing Oo's CV"
+                >
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download CV</span>
+                </a>
+
                 <a href="#contact" class="btn btn-secondary">
                   <span>Contact Me</span>
                 </a>
@@ -2168,9 +2287,9 @@
                 transaction safety, and maintainable code structure.
               </p>
               <p>
-                My project work includes Dinger payment integration with
-                HMAC-SHA256 signature verification, SMTP OTP email verification,
-                and multi-branch GitHub team collaboration. Combined with my
+                My project work focuses on robust relational MySQL database
+                architecture, Jakarta Mail SMTP OTP verification workflows, and
+                multi-branch GitHub team collaboration. Combined with my
                 <strong
                   >Japanese language proficiency (NAT TEST N3, studying
                   N2)</strong
@@ -2706,7 +2825,7 @@
                     >
                   </div>
                 </div>
-                <span class="skill-card-badge">6 Technologies</span>
+                <span class="skill-card-badge">4 Technologies</span>
               </div>
               <div class="pill-group">
                 <!-- MySQL -->
@@ -2826,67 +2945,6 @@
                     </svg>
                   </span>
                   <span>RESTful APIs</span>
-                </span>
-
-                <!-- Dinger Payment API -->
-                <span
-                  class="pill"
-                  title="Dinger Payment Gateway (KBZPay, WavePay Integration)"
-                >
-                  <span class="pill-icon-box">
-                    <svg
-                      class="pill-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#10B981"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                    >
-                      <rect
-                        x="2"
-                        y="5"
-                        width="20"
-                        height="14"
-                        rx="3"
-                        fill="rgba(16,185,129,0.15)"
-                      />
-                      <line x1="2" y1="10" x2="22" y2="10" stroke="#10B981" />
-                      <line x1="6" y1="15" x2="10" y2="15" stroke="#10B981" />
-                      <circle cx="17" cy="15" r="1.5" fill="#10B981" />
-                    </svg>
-                  </span>
-                  <span>Dinger Payment API</span>
-                </span>
-
-                <!-- HMAC-SHA256 -->
-                <span
-                  class="pill"
-                  title="HMAC-SHA256 Cryptographic Hash &amp; Signature Verification"
-                >
-                  <span class="pill-icon-box">
-                    <svg
-                      class="pill-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#818CF8"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                        fill="rgba(129,140,248,0.12)"
-                      />
-                      <circle cx="12" cy="10" r="2" fill="#818CF8" />
-                      <path d="M12 12v3" />
-                    </svg>
-                  </span>
-                  <span>HMAC-SHA256</span>
                 </span>
 
                 <!-- Jakarta Mail -->
@@ -3886,7 +3944,7 @@
             <!-- Card 1: ITPEC FE -->
             <article class="credential-card reveal">
               <a
-                href="http://itpec.org"
+                href="https://itpec.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="credential-icon credential-logo-box"
@@ -3894,18 +3952,18 @@
               >
                 <img
                   src="itpec_logo.png"
-                  onerror="
-                    this.onerror = null;
-                    this.src = 'http://itpec.org/image/ITPEC-logo.gif';
-                  "
                   alt="ITPEC Logo"
+                  onerror="this.onerror=null; this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
                 />
+                <span class="credential-fallback-badge" style="display: none;" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                </span>
               </a>
               <div>
                 <span class="credential-badge">IT Certification Exam</span>
                 <h3 class="credential-title">
                   <a
-                    href="http://itpec.org"
+                    href="https://itpec.org"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -3934,7 +3992,7 @@
                 </h3>
                 <p class="credential-sub">Morning (AM) Section Passed</p>
                 <a
-                  href="http://itpec.org"
+                  href="https://itpec.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="credential-link-pill"
@@ -4238,6 +4296,30 @@
 
         <p class="modal-summary" id="modalSummary"></p>
 
+        <!-- My Role Callout for Group Projects -->
+        <div class="modal-role-box" id="modalRoleBox" style="display: none;">
+          <div class="modal-role-header">
+            <svg
+              class="modal-role-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <polyline points="16 11 18 13 22 9"></polyline>
+            </svg>
+            <span class="modal-role-label">My Role &amp; Contributions</span>
+          </div>
+          <p class="modal-role-text" id="modalRoleText"></p>
+        </div>
+
         <div class="modal-section-label">Key Technical Highlights</div>
         <ul class="modal-highlights" id="modalHighlights"></ul>
 
@@ -4328,6 +4410,7 @@
             tag: "Desktop Application — Group Project",
             title: "Flight Management System",
             image: "flight_project.jpg",
+            role: "Implemented the Jakarta Mail SMTP OTP authentication workflow, flight booking & sales MySQL database operations, and system flowcharts.",
             summary:
               "Full-stack airline booking, scheduling, and sales management desktop system built collaboratively with JavaFX, Maven, and MySQL.",
             highlights: [
@@ -4343,6 +4426,7 @@
             tag: "Desktop Application — Group Project",
             title: "Point of Sale (POS) System",
             image: "pos_project.png",
+            role: "Designed the custom dark-mode JavaFX CSS styling, MySQL database integration, and core Admin Dashboard / Cashier Checkout workflows.",
             summary:
               "Modern dark-themed retail POS desktop application engineered for fast cashier operations and accurate store inventory control.",
             highlights: [
@@ -4651,6 +4735,8 @@
           const modalTag = document.getElementById("modalTag");
           const modalTitle = document.getElementById("modalTitle");
           const modalImg = document.getElementById("modalImg");
+          const modalRoleBox = document.getElementById("modalRoleBox");
+          const modalRoleText = document.getElementById("modalRoleText");
           const modalSummary = document.getElementById("modalSummary");
           const modalHighlights = document.getElementById("modalHighlights");
           const modalTech = document.getElementById("modalTech");
@@ -4670,6 +4756,15 @@
             if (modalImg && data.image) {
               modalImg.src = data.image;
               modalImg.alt = data.title + " Preview";
+            }
+            if (modalRoleBox && modalRoleText) {
+              if (data.role) {
+                modalRoleText.textContent = data.role;
+                modalRoleBox.style.display = "block";
+              } else {
+                modalRoleText.textContent = "";
+                modalRoleBox.style.display = "none";
+              }
             }
             modalSummary.textContent = data.summary;
             modalGithubLink.href = data.github;
