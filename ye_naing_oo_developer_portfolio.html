@@ -2159,6 +2159,7 @@
                 <a
                   href="Ye_Naing_Oo_CV.pdf"
                   download="Ye_Naing_Oo_CV.pdf"
+                  id="downloadCvBtn"
                   class="btn btn-cv"
                   aria-label="Download Ye Naing Oo's CV"
                 >
@@ -4901,6 +4902,64 @@
         }
 
         /* --------------------------------------------------------------------
+         7. Custom Download CV with Save Location Picker
+         -------------------------------------------------------------------- */
+        function initDownloadCV() {
+          const cvBtn = document.getElementById("downloadCvBtn");
+          if (!cvBtn) return;
+
+          cvBtn.addEventListener("click", async (e) => {
+            if (window.isSecureContext && "showSaveFilePicker" in window) {
+              e.preventDefault();
+              try {
+                const handle = await window.showSaveFilePicker({
+                  suggestedName: "Ye_Naing_Oo_CV.pdf",
+                  types: [
+                    {
+                      description: "PDF Document (*.pdf)",
+                      accept: {
+                        "application/pdf": [".pdf"],
+                      },
+                    },
+                  ],
+                });
+
+                showToast("Downloading and saving CV...");
+
+                const response = await fetch("Ye_Naing_Oo_CV.pdf");
+                if (!response.ok) throw new Error("Failed to fetch CV file");
+                const blob = await response.blob();
+
+                const writable = await handle.createWritable();
+                await writable.write(blob);
+                await writable.close();
+
+                showToast("CV saved successfully!");
+              } catch (err) {
+                if (err.name === "AbortError") {
+                  // User cancelled the file picker dialog
+                  return;
+                }
+                console.warn(
+                  "Save file picker failed, falling back to direct download:",
+                  err,
+                );
+                fallbackDownload();
+              }
+            }
+          });
+
+          function fallbackDownload() {
+            const tempLink = document.createElement("a");
+            tempLink.href = "Ye_Naing_Oo_CV.pdf";
+            tempLink.download = "Ye_Naing_Oo_CV.pdf";
+            document.body.appendChild(tempLink);
+            tempLink.click();
+            document.body.removeChild(tempLink);
+          }
+        }
+
+        /* --------------------------------------------------------------------
          Initialize All Modules on DOM Ready
          -------------------------------------------------------------------- */
         document.addEventListener("DOMContentLoaded", () => {
@@ -4911,6 +4970,7 @@
             initNavigation();
             initProjectModal();
             initCopyEmail();
+            initDownloadCV();
           } catch (error) {
             console.error("Portfolio initialization error:", error);
           }
