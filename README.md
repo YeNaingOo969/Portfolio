@@ -30,7 +30,7 @@ Personal developer portfolio website of **Ye Naing Oo**, showcasing technical sk
 
 - **B.Sc. Mathematics** — Yangon University of Distance Education (YUDE) *(Expected 2026)*
 - **Diploma in Software Engineering** — Metro IT & Japanese Language Center *(2024 - 2026)*
-- **Fundamental Information Technology Engineer Examination (FE)** — JITEC / ITPEC
+- **Fundamental Information Technology Engineer Examination (FE)** — JITEC / ITPEC *(Full Passed)*
 - **Information Technology Passport Examination (IP)** — JITEC / ITPEC
 
 ---
