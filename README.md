@@ -10,10 +10,10 @@ Personal developer portfolio website of **Ye Naing Oo**, showcasing technical sk
 
 | Project | Tech Stack | Type | Description |
 |---|---|---|---|
-| **[POINTER](https://github.com/YeNaingOo969/POINTER)** | PHP, Laravel, MySQL, JavaScript | Full-Stack Web App | Yangon local directory, transit guide, shop subscription, and discount ticket platform. |
-| **[Flight Management System](https://github.com/YeNaingOo969/FlightManagementSystem)** | Java, JavaFX, Maven, MySQL, Jakarta Mail | Desktop App (Group) | Airline booking, scheduling, and sales management desktop system with SMTP OTP verification. |
-| **[Point of Sale (POS) System](https://github.com/YeNaingOo969/PointOfSale)** | Java, JavaFX, MySQL, Custom CSS | Desktop App (Group) | Modern dark-themed retail POS desktop application for cashier operations and real-time inventory. |
-| **[Hospital Appointment System](https://github.com/YeNaingOo969/Hsappointment)** | PHP, MySQL, JavaScript, HTML5, Bootstrap | Full-Stack Web App | Medical appointment scheduling, patient registration, and doctor roster management system. |
+| **[POINTER](https://github.com/YeNaingOo969/POINTER)** | PHP, Laravel, MySQL, JavaScript | Full-Stack Web App (Project Lead) | Yangon local directory, transit guide, shop subscription, and discount ticket platform. |
+| **[Flight Management System](https://github.com/YeNaingOo969/FlightManagementSystem)** | Java, JavaFX, Maven, MySQL, Jakarta Mail | Desktop App (Team Leader) | Airline booking, scheduling, and sales management desktop system with SMTP OTP verification. |
+| **[Point of Sale (POS) System](https://github.com/YeNaingOo969/PointOfSale)** | Java, JavaFX, MySQL, Custom CSS | Desktop App (Team Leader) | Modern dark-themed retail POS desktop application for cashier operations and real-time inventory. |
+| **[Hospital Appointment System](https://github.com/YeNaingOo969/Hsappointment)** | PHP, MySQL, JavaScript, HTML5, Bootstrap | Full-Stack Web App (Project Lead) | Medical appointment scheduling, patient registration, and doctor roster management system. |
 
 ---
 
